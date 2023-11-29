@@ -121,6 +121,7 @@ table.employee-table {
     h1.page-title,
     h5.subtitle {
         margin: 0; /* Reset margins for printing */
+        page-break-after: avoid; /* Avoid page break after title and subtitle */
     }
 
     .employee-container {
@@ -128,6 +129,7 @@ table.employee-table {
         max-height: 95%;
         border: none; /* Remove border for printing */
         padding: 0; /* Remove padding for printing */
+        page-break-before: avoid; /* Avoid page break before table */
     }
 
     .column {
