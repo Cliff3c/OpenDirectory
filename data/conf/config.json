@@ -1,0 +1,15 @@
+{
+    "initialize_status": "0",
+    "pageTitle": "EMPLOYEE DIRECTORY",
+    "organization_Settings": {
+        "titles": {
+            "title_0": "Miss",
+            "title_1": "Mr.",
+            "title_2": "Mrs.",
+            "title_3": "Ms."
+        },
+        "Departments": [
+
+        ]
+    }
+}

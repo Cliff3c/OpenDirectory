@@ -1,0 +1,599 @@
+/*CSS from Login.php */
+body {
+       font-family: Arial, sans-serif;
+       background-color: #f5f5f5;
+       margin: 0;
+       padding: 0;
+   }
+
+   h1 {
+       text-align: center;
+       margin-top: 20px;
+   }
+
+   .container.small {
+       background-color: #fff;
+       border-radius: 8px;
+       box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+       max-width: 400px;
+       margin: 20px auto;
+       padding: 20px;
+   }
+
+   form{
+       text-align: center;
+   }
+   
+   .form-group{
+       text-align: left;
+   }
+
+   label {
+       font-weight: bold;
+   }
+
+   input[type="text"],
+   input[type="email"],
+   input[type="password"] {
+       width: 90%;
+       padding: 10px;
+       margin: 5px 0;
+       border: 1px solid #ccc;
+       border-radius: 5px;
+   }
+
+   .button {
+       display: inline-block;
+       background-color: #007bff;
+       color: #fff;
+       padding: 10px 20px;
+       border: none;
+       border-radius: 5px;
+       font-size: 16px;
+       text-align: center;
+       text-decoration: none;
+       cursor: pointer;
+       margin-top: 10px;
+   }
+
+.button:hover {
+       background-color: #0056b3;
+   }
+
+.button2 {
+    display: inline-block;
+    background-color: #dc3545;
+    color: #fff;
+    padding: 1px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.button2:hover {
+    background-color: #c82333;
+}
+.buttonWarning {
+    display: inline-block;
+    background-color: #ff0000; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 5px 10px; /* Adjust padding to fit your design */
+    text-align: center;
+    text-decoration: none;
+	margin-top: 10px;
+    border: 2px solid #ff0000; /* Button border color (same as background) */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.buttonWarning:hover {
+    background-color: #cc0000; /* Change background color on hover */
+}
+
+
+.error {
+       color: #dc3545;
+       font-weight: bold;
+       padding-top: 10px;
+   }
+.footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.user-info {
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    /* Add any additional styles you want for the text here */
+    margin-top: 10px; /* Add margin to separate the text and button vertically */
+}
+
+.logout-button {
+    display: inline-block; /* Display the button as a block element */
+}
+
+.footer a.button {
+    background-color: #dc3545; /* Red color for the logout button */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Smooth transition for the button color */
+    display: block; /* Display the button as a block element */
+}
+
+.footer a.button:hover {
+    background-color: #c82333; /* Darker red color on hover */
+}
+
+
+/*CSS from admin.php */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a.button {
+    display: block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+a.button:hover {
+    background-color: #0056b3;
+}
+
+.success {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.failure {
+    color: #FF0000; /* This sets the text color to red */
+    font-weight: bold;
+}
+
+.error {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+/* Style for the JSON data display area */
+.json-data {
+    display: none;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    white-space: pre-wrap;
+}
+
+/* CSS for the tooltip */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+/* CSS for the tooltip text */
+.tooltip .tooltip-text {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9); /* Adjust the last value (0.9) for transparency */
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 300px;
+    z-index: 1;
+    bottom: -200%; /* Change this to position the tooltip relative to the name */
+    left: 150%; /* Change this to position the tooltip to the right of the name */
+    white-space: pre-wrap;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Show the tooltip text on hover */
+.tooltip:hover .tooltip-text {
+    display: block;
+}
+
+.page-title {
+	text-align: center; /* Center the text */
+	font-size: 32px; /* Adjust the font size */
+	color: #333; /* Change the text color */
+	margin-top: 20px; /* Add margin at the top */
+	text-transform: uppercase; /* Convert text to uppercase */
+	letter-spacing: 2px; /* Adjust letter spacing */
+	font-weight: bold; /* Make the text bold */
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a text shadow */
+}
+
+/*JSON_Gen.php styles */
+    h1.page-title {
+        text-align: center;
+        font-size: 32px;
+        color: #333;
+        margin-top: 20px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .container {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    button,
+    input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    button:hover,
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+
+    .success {
+        color: #28a745;
+        font-weight: bold;
+    }
+
+    .error {
+        color: #dc3545;
+        font-weight: bold;
+    }
+
+    /* Styles from the first set */
+    .json-data {
+        display: none;
+        padding: 10px;
+        margin-top: 10px;
+        background-color: #f8f9fa;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        white-space: pre-wrap;
+    }
+
+    label {
+		text-align: left;
+		color: #333; /* Change the text color */
+		margin-top: 10px; /* Add margin at the top */
+		letter-spacing: 2px; /* Adjust letter spacing */
+		display: block;
+		margin-bottom: 5px;
+    }
+
+/* CSS for a label-like element with a border on top, left, and right sides */	
+	label2 {
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px; /* Add padding to create space between the text and the border */
+    border-radius: 5px; /* Add rounded corners to the border */
+    margin-bottom: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add a shadow to the border */
+    }
+
+    
+    select {
+        width: 95%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+	
+/* Delete.php style */
+select,
+input[type="submit"] {
+	width: 95%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+/* Update.php styles */
+/* Style for Instructions */
+.instructions {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: justify;
+	display: none; /* Hide instructions by default */
+}
+
+.instructions p {
+    margin: 10px 0;
+}
+
+/* Button style for toggling instructions */
+button.toggle-button.toggle-button {
+    width: 95%;
+	background-color: #FFC107;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+	margin-bottom: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button.toggle-button.select {
+    width: 95%;
+	background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+	margin-bottom: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.toggle-button.toggle-button:hover {
+    background-color: #0056b3;
+}
+
+ details {
+    background-color: #007bff;
+	color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.view-button {
+	background-color: #0056b3;
+	width: 95%;
+	padding: 10px;
+	margin-bottom: 5px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+/* CSS for the image container */
+.image-container {
+    display: flex; /* Use flexbox to display images in a row */
+    align-items: center; /* Vertically align images in the center */
+    margin: 10px; /* Add margin around the container */
+}
+
+/* CSS for the images */
+.image-container img {
+    max-width: 100%; /* Limit the maximum width of the images */
+    border: 2px solid #ccc; /* Add a border to the images */
+    border-radius: 10px; /* Add rounded corners to the images */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+    transition: transform 0.2s ease-in-out; /* Add a smooth hover effect */
+
+    /* Add padding and background color on hover */
+    padding: 5px;
+    background-color: #f5f5f5;
+    margin-right: 10px; /* Add spacing between images */
+}
+
+/* Apply a scale transformation on hover */
+.image-container img:hover {
+    transform: scale(1.05);
+}
+
+/* CSS for the JSON data */
+.json-dataview {
+    border: 1px solid #ccc; /* Add a border around the JSON data */
+    padding: 10px; /* Add some padding to the JSON data */
+    border-radius: 5px; /* Add rounded corners to the border */
+    margin-bottom: 20px; /* Add margin at the bottom to separate from images */
+}
+
+/* CSS for the border box */
+.border-box {
+    border: 1px solid #ccc; /* Add a border around the entire content */
+    padding: 10px; /* Add padding to the border box */
+    border-radius: 5px; /* Add rounded corners to the border box */
+}
+
+/* CSS for the image container */
+.image-container {
+    display: flex; /* Use flexbox to display images in a row */
+    justify-content: space-between; /* Distribute space between images */
+    align-items: center; /* Center align images vertically */
+    margin-top: 10px; /* Add margin at the top of the image container */
+}
+
+/* CSS for individual images */
+.image-container img {
+    max-width: 30%; /* Limit the width of each image */
+    border: 1px solid #ccc; /* Add a border around each image */
+    border-radius: 5px; /* Add rounded corners to the image border */
+    padding: 5px; /* Add padding to each image */
+}
+.message-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.message-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    padding: 20px;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 2;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+/* Styles for the popup container */
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Additional Styles for the popup content */
+.popup-content {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.popup-content p {
+    margin: 0;
+    font-weight: bold;
+}
+
+.popup-content ol {
+    padding-left: 20px;
+    list-style-position: inside;
+}
+
+.popup-content ul {
+    padding-left: 20px;
+    list-style-position: inside;
+}
+
+.popup-content li {
+    margin-bottom: 10px;
+}
+
+/* Button style for the "Cancel" button */
+.cancel-button {
+    background-color: #FF0000; /* Red background color */
+    color: #fff; /* Text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Style for aligning buttons side by side */
+.container.large center {
+    text-align: center; /* Center-align the buttons container */
+}
+
+.container.large center button {
+    margin-right: 10px; /* Add some right margin to separate the buttons */
+    display: inline-block; /* Display buttons in a line */
+}
+
+button#applyButton, button#cancelButton {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.button-container button {
+    width: 46%;
+	display: inline-block;
+    margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.warning-message {
+    background-color: #f8d7da; /* Red or other suitable warning color */
+    border: 1px solid #dc3545; /* Matching border color */
+    color: #721c24; /* Matching text color */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.centered-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td {
+	border: 1px solid #ddd;
+	padding: 8px;
+	text-align: left;
+}
+
+th {
+	background-color: #373737;
+}
+
+tr:nth-child(even) {
+	background-color: #4187d2;
+}
+
+tr:nth-child(odd) {
+	background-color: #6eb4ff;
+}
+
+tr:hover {
+	background-color: #0056b3;
+}
+
+.input-with-remove {
+    display: flex; /* Or use display: inline-flex; to have them in a row */
+    align-items: center; /* Align items vertically */
+}
+.input-with-remove input {
+    flex: 1; /* Allow the input to take up remaining space */
+    margin-right: 5px; /* Add some spacing between the input and the button */
+}

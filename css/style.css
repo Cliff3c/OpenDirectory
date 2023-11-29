@@ -1,0 +1,533 @@
+
+
+body {
+    background: #465EA4;
+}
+
+h2 {
+    padding-left: 15px;
+    color: #575656;
+    font-family: 'Rubik', sans-serif;
+    float: left;
+}
+
+#profiles {
+    margin: auto;
+    max-width: 96%;
+
+}
+
+ul {
+   margin: auto; 
+
+}
+
+li {
+	width: 30%;
+    background: #FCFCFC;
+    border-radius: 10px;
+    min-height: 10%;
+    float: left;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+    padding: 1.75em;
+    cursor: hand;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: #bababa;
+    border-width: 2px;
+	white-space: nowrap;   /* Prevent text from wrapping to the next line */
+    overflow: hidden;  /* Hide overflowing text */
+    text-overflow: ellipsis; /* Show an ellipsis (...) for long text */
+}
+
+.image{
+    float: left;
+    height: 100%
+}
+
+
+img {   
+    border-radius: 50%;
+}
+
+.info {
+    display: inline-block;
+    padding-left: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #878787;
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 7px
+}
+
+.fullName {
+    font-size: 1.2rem;
+    font-weight: bold;
+	text-shadow: 1px 1px #c6c6c6;
+    margin-bottom: 12px;
+    color: #3366CC;
+    font-family: 'Rubik', sans-serif;
+}
+
+.propper-noun{
+    text-transform: capitalize;
+}
+
+li:hover img {
+    opacity: 1;
+    -webkit-animation: flash 1.5s;
+    animation: flash 1.5s;
+}
+
+@-webkit-keyframes flash {
+    0% {
+        opacity: .4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes flash {
+    0% {
+        opacity: .4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#overlay {
+    display: none; 
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+#modal {
+    display: none;
+    background-color: #FCFCFC;
+    min-width: 20%;
+    max-height: 700%;
+    border: 1px solid #888;
+    position: fixed;
+    z-index: 1;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 35px;
+     box-sizing: border-box;
+    border-style: solid;
+    border-color: #bababa;
+    border-width: 2px;
+     border-radius: 10px;
+}
+
+.modal-image{
+    padding-bottom: 20px;
+    display: block;
+    margin: auto;
+}
+
+.modal-info{
+    color: #878787;
+    font-family: 'Raleway', sans-serif;
+}
+
+hr {
+margin: 20px 0;
+}
+
+#address {
+margin: 20px 0;
+}
+
+#address p{
+margin: 0;
+}
+
+
+#arrows {
+margin-top: 25px;
+font-size: 24px;
+
+}
+
+.next {
+text-decoration: none;
+color: inherit;
+}
+
+.next:hover {
+    color: black;
+}
+
+.prev {
+text-decoration: none;
+color: inherit;
+}
+
+.prev:hover {
+    color: black;
+}
+
+searchBar {
+    display: inline;
+    float: right;
+    border-radius: 7px;
+    height: 28px;
+    width: 300px; 
+    min-width: 200px;
+    margin: 20px 20px 0 20px;
+    font-family: 'Raleway', sans-serif;
+    padding-left: 8px;
+
+}
+
+header {
+    background-color: #004F81;
+    height: 35vh;
+    margin-bottom: 40px;
+    width: 100%;
+    padding: 0 25px;
+	border-bottom: 1px solid #000000;
+}
+
+.header-container {
+    max-width: 1300px;
+    height: 100%;
+    margin: auto;
+}
+.logo-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.logo {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+	text-shadow: 0px 0px 15px #000000;
+}
+
+.portfolio-button {
+    text-decoration: none;
+    color: #004F81;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px 15px;
+    background-color: white;
+    border-radius: 40px;
+}
+
+.intro-wrapper {
+    width: 100%;
+    text-align: center;
+    height: calc(100% - 65px);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-wrapper h3 {
+    color: white;
+	font-size: 35px;
+    margin-bottom: 15px;
+	text-shadow: 1px 1px 25px #000000;
+}
+
+.intro-wrapper p {
+    color: white;
+    margin-bottom: 35px;
+	text-shadow: 1px 1px 25px #000000;
+}
+
+input {
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+    padding: 13px 20px;
+    border-radius: 50px;
+    border: 1.5px solid white;
+    background-color: #004F81;
+    color: white;
+}
+
+input::placeholder {
+    color: white;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    text-decoration: none;
+    color: #004F81;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px 15px;
+    background-color: white;
+    border-radius: 40px;
+    border: 1px solid #004F81;
+    cursor: pointer;
+}
+
+.dropbtn:hover {
+    background-color: #004F81;
+    color: white;
+}
+
+/* Dropdown container (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Media query for smaller screens - 3 levels
+ * 1440px width for HiRes devices that displays 3 columns
+ * 1024px width for medium sized screens displaying 2 columns
+ * 768px width for lower resolution devices showing 1 column
+ * Media query for large-sized screens */
+@media screen and (max-width: 1440px) {
+    li {
+        width: 30%; /* Adjust width for 2-column layout */
+        margin-left: 1%;
+        margin-right: 0%;
+        padding: 1em;
+        display: flex; /* Use flexbox for layout */
+        flex-direction: column; /* Arrange elements in a column */
+        align-items: center; /* Center align items horizontally */
+    }
+
+    .image {
+        display: block;
+        margin: 0 auto; /* Center the image horizontally */
+        width: 128px;
+        height: auto;
+        margin-bottom: 10px; /* Add spacing between image and text */
+    }
+
+    .info {
+        text-align: center; /* Center align text */
+        padding-top: 10px;
+    }
+
+    /* Handle text overflow for smaller screens */
+    .fullName,
+    p {
+        white-space: normal;
+        overflow: visible;
+        text-overflow: clip;
+    }
+
+    .fullName {
+        font-size: 24px;
+        font-weight: bold;
+        text-shadow: 1px 1px #c6c6c6;
+        margin-bottom: 12px;
+        color: #3366CC;
+        font-family: 'Rubik', sans-serif;
+    }
+
+    #modal {
+        width: 30%; /* Adjust width for mobile */
+        max-width: 30%; /* Adjust max-width for mobile */
+        padding: 25px; /* Adjust padding for mobile */
+    }
+
+    .modal-image img {
+        width: 256px; /* Make the image fill the modal */
+        height: auto; /* Maintain aspect ratio */
+        max-width: 90%; /* Ensure image doesn't exceed modal width */
+        display: block;
+        margin: auto;
+    }
+
+    .modal-info {
+        color: #878787;
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px; /* Adjust font size for mobile */
+        line-height: 1.0; /* Adjust line height for better readability */
+        padding-top: 12px; /* Add space between image and text */
+    }
+
+
+}
+
+/* Media query for medium-sized screens */
+@media screen and (max-width: 1200px) {
+    li {
+        width: 48%; /* Adjust width for 2-column layout */
+        margin-left: 1%;
+        padding: 1em;
+        display: flex; /* Use flexbox for layout */
+        flex-direction: column; /* Arrange elements in a column */
+        align-items: center; /* Center align items horizontally */
+    }
+
+    .image {
+        display: block;
+        margin: 0 auto; /* Center the image horizontally */
+        width: 128px;
+        height: auto;
+        margin-bottom: 10px; /* Add spacing between image and text */
+    }
+
+    .info {
+        text-align: center; /* Center align text */
+        padding-top: 10px;
+    }
+
+    /* Handle text overflow for smaller screens */
+    .fullName,
+    p {
+        white-space: normal;
+        overflow: visible;
+        text-overflow: clip;
+    }
+
+    .fullName {
+        font-size: 24px;
+        font-weight: bold;
+        text-shadow: 1px 1px #c6c6c6;
+        margin-bottom: 12px;
+        color: #3366CC;
+        font-family: 'Rubik', sans-serif;
+    }
+
+
+    #modal {
+        width: 50%; /* Adjust width for mobile */
+        max-width: 50%; /* Adjust max-width for mobile */
+        padding: 15px; /* Adjust padding for mobile */
+    }
+
+    .modal-image img {
+        width: 256px; /* Make the image fill the modal */
+        height: auto; /* Maintain aspect ratio */
+        max-width: 90%; /* Ensure image doesn't exceed modal width */
+        display: block;
+        margin: auto;
+    }
+
+    .modal-info {
+        color: #878787;
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px; /* Adjust font size for mobile */
+        line-height: 1.0; /* Adjust line height for better readability */
+        padding-top: 12px; /* Add space between image and text */
+    }
+
+}
+
+/* Media query for small-sized screens */
+@media screen and (max-width: 768px) {
+    li {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding: 1em;
+        display: flex; /* Use flexbox for layout */
+        flex-direction: column; /* Arrange elements in a column */
+        align-items: center; /* Center align items horizontally */
+    }
+
+    .image {
+        display: block;
+        margin: 0 auto; /* Center the image horizontally */
+        width: 128px;
+        height: auto;
+        margin-bottom: 10px; /* Add spacing between image and text */
+    }
+
+    .info {
+        text-align: center; /* Center align text */
+        padding-top: 10px;
+    }
+
+    /* Handle text overflow for smaller screens */
+    .fullName,
+    p {
+        white-space: normal;
+        overflow: visible;
+        text-overflow: clip;
+    }
+
+    .fullName {
+        font-size: 24px;
+        font-weight: bold;
+        text-shadow: 1px 1px #c6c6c6;
+        margin-bottom: 12px;
+        color: #3366CC;
+        font-family: 'Rubik', sans-serif;
+    }
+
+    .logo-bar {
+        display:flexbox;
+        align-items: center;
+        justify-content:space-around;
+        padding-top: 40px;
+    }
+
+    #modal {
+        width: 80%; /* Adjust width for mobile */
+        max-width: 80%; /* Adjust max-width for mobile */
+        padding: 15px; /* Adjust padding for mobile */
+    }
+
+    .modal-image img {
+        width: 256px; /* Make the image fill the modal */
+        height: auto; /* Maintain aspect ratio */
+        max-width: 90%; /* Ensure image doesn't exceed modal width */
+        display: block;
+        margin: auto;
+    }
+
+    .modal-info {
+        color: #878787;
+        font-family: 'Raleway', sans-serif;
+        font-size: 18px; /* Adjust font size for mobile */
+        line-height: 1.0; /* Adjust line height for better readability */
+        padding-top: 12px; /* Add space between image and text */
+    }
+}

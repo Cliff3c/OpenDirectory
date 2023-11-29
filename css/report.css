@@ -1,0 +1,136 @@
+/* Narrower margins to fit within 8.5x11 sheet */
+body {
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 14px;
+    margin: 5px; /* Narrower margins for better space utilization */
+    padding: 0; /* Reset padding */
+}
+
+
+h1.page-title {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 5px; /* Adjust margin */
+}
+
+h5.subtitle {
+    text-align: center;
+    font-size: 12px; /* Adjust font size */
+    color: #555; /* Adjust color */
+    margin-bottom: 10px; /* Adjust margin */
+}
+
+h2 {
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+
+.department {
+    margin-bottom: 10px;
+}
+
+h2.page-title {
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.employee {
+    margin-bottom: 5px;
+}
+
+/* Define styles for the table */
+table.employee-table {
+    border-collapse: collapse;
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+/* Define styles for the table headers */
+.employee-table th {
+    border: 1px solid #ddd;
+    padding: 3px; /* Increase padding for better spacing */
+    text-align: left;
+    width: 25%; /* Set a fixed width for each header column */
+}
+
+/* Style the table data cells */
+.employee-table td {
+    border: 1px solid #ddd;
+    padding: 3px; /* Increase padding for better spacing */
+    text-align: left;
+    width: 25%; /* Set a fixed width for each data column */
+    word-break: break-word; /* Allow long words to break and wrap */
+}
+
+/* Increase spacing between columns */
+.employee-table td + td,
+.employee-table th + th {
+    padding-left: 5px; /* Adjust the padding to increase the spacing */
+}
+
+.employee-container {
+    column-count: 2; /* Split into two columns */
+    column-gap: 10px; /* Adjust column gap for readability */
+    max-width: calc(80% - 20px); /* Max width reduced for narrower margins */
+    margin: 0 auto;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    padding: 2px; /* Padding for content within the container */
+    overflow: hidden; /* Ensure content doesn't overflow the container */
+}
+
+/* Account for h2.page-title heights in container height */
+.employee-container {
+    padding-top: 20px; /* Adjust based on your h2.page-title height */
+    padding-bottom: 20px; /* Adjust based on your h2.page-title height */
+}
+
+.column {
+    width: 100%; /* Adjusted width for columns with a gap between */
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box; /* Ensure the border width doesn't affect column width */
+    padding-right: 3px; /* Adjust padding to account for the border */
+    padding-left: 15px; /* Adjust padding to account for the border */
+    margin-bottom: 20px; /* Add margin between columns */
+}
+
+.column:not(:last-child) {
+    border-right: 1px solid #ccc; /* Adding a border between columns */
+}
+
+/* Additional styles for printing */
+@media print {
+    body {
+        margin: 0;
+    }
+
+    h1.page-title,
+    h5.subtitle {
+        margin: 0; /* Reset margins for printing */
+    }
+
+    .employee-container {
+        max-width: 95%; /* Occupy full width for printing */
+        max-height: 95%;
+        border: none; /* Remove border for printing */
+        padding: 0; /* Remove padding for printing */
+    }
+
+    .column {
+        margin-bottom: 0; /* No margin between columns for printing */
+    }
+}
