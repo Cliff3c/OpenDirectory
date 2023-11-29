@@ -1,4 +1,6 @@
 # Ignore everything in this directory
-*
-# Except this file
-!.gitignore
+/temp/*
+# Except these files and directories
+!/temp/.gitignore
+!/temp/json/
+!/temp/images/
