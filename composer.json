@@ -1,5 +1,13 @@
 {
+    "name": "Open Directory",
+    "description": "PHP application for App Platform",
+    "type": "project",
     "require": {
         "ext-gd": "*"
-}
+    },
+    "authors": [
+        {
+            "name": "Cliff Cazes"
+        }
+    ]
 }

@@ -1,0 +1,43 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "packages": [
+        {
+            "name": "cliff3c/opendirectory",
+            "version": "1.0.0",
+            "require": {
+                "php": ">=5.6.0"
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Cliff Cazes",
+                    "email": "alrik11es@gmail.com",
+                    "homepage": "https://github.com/Cliff3c",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Open Directory - Open source employee directory with admin portal functionality to manage data.",
+            "homepage": "https://github.com/Cliff3c/OpenDirectory/",
+            "keywords": [
+                "open directory",
+                "employee directory"
+            ]
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": true,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
+
+    
