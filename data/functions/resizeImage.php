@@ -1,4 +1,4 @@
-<? 
+<?php
     // Check if the user is not logged in
     if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
         // User is not logged in; redirect to the login page or display an access denied message
@@ -45,3 +45,4 @@
 
         return true;
     }
+    ?>
