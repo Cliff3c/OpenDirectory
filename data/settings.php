@@ -529,7 +529,7 @@
 
     function validateInput(input) {
         // Remove special characters from the input value
-        input.value = input.value.replace(/[^\w\s]/gi, '');
+        input.value = input.value.replace(/[^\w\s.-]/gi, '');
     }
 </script>
 </body>
